@@ -2,10 +2,10 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-{UNIQUE_IDENTIFIER}.apps.chicken.pal.pivotal.io
+  - route: allocations-pal-5322ecf3-5251-4d2f-90dd-5d3030f37f76.cfapps.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-fa38cfee-359c-4bfd-9bae-1d2b2c72e499.cfapps.io
   services:
   - tracker-allocations-database
